@@ -13,6 +13,15 @@ export default {
     return {
 
     }
+  },
+  methods () {
+
+  },
+  created () {
+
+  },
+  mounted () {
+
   }
 }
 </script>
