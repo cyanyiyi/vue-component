@@ -1,4 +1,5 @@
 import Mock from 'mockjs'
+import menuApi from './menu'
 
 // 菜单
-Mock.mock(/\/getMenuList/, 'get', api.getMenuList)
+Mock.mock(/\/menu\/getMenuList/, 'get', menuApi.getMenuList)

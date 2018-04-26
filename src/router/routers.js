@@ -6,13 +6,13 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: () => import(/* webpackChunkName: "hello-word" */ '@/components/HelloWorld')
-    },
-    {
       path: '',
-      name: '',
-      component: () => import(/* webpackChunkName: "hello-word" */ '@/components/HelloWorld')
+      redirect: 'home',
+      component: () => import(/* webpackChunkName: "home" */ '@/views/page/layout/Layout'),
+      children: [{
+        name: 'home',
+        path: 'home',
+        component: () => import(/* webpackChunkName: "home" */ '@/views/page/home')
+      }]
     }]
 })

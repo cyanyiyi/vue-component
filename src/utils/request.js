@@ -42,9 +42,9 @@ $http.interceptors.response.use(response => {
   if (error && error.response) {
     const res = error.reponse
     const {status} = res
-    switch (status) {
-      case '404':
-    }
+    // switch (status) {
+    //   case '404':
+    // }
     return Promise.reject(status)
   }
 })
