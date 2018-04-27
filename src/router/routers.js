@@ -7,12 +7,12 @@ export default new Router({
   routes: [
     {
       path: '',
-      redirect: 'home',
-      component: () => import(/* webpackChunkName: "home" */ '@/views/page/layout/Layout'),
+      redirect: '',
+      component: () => import(/* webpackChunkName: "home" */ '@/views/pages/layout/Layout'),
       children: [{
         name: 'home',
         path: 'home',
-        component: () => import(/* webpackChunkName: "home" */ '@/views/page/home')
+        component: () => import(/* webpackChunkName: "home" */ '@/views/pages/home')
       }]
     }]
 })

@@ -1,6 +1,6 @@
 <template>
   <div class="app-wrapper">
-    <aside></aside>
+    <aside class="side-container">111</aside>
     <div class="main-container">
       <header></header>
       <section></section>
@@ -26,5 +26,19 @@ export default {
 }
 </script>
 <style>
-
+ .app-wrapper {
+   width: 100%;
+   height: 100%;
+   position: relative;
+ }
+ .side-container {
+   width: 80px;
+   height: 100%;
+   border: 1px solid #ccc;
+ }
+ .main-container {
+   width: 100%;
+   height: 100%;
+   border: 1px solid #000;
+ }
 </style>
