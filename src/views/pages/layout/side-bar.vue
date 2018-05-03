@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div class="side-container">
+
+  </div>
 </template>
 <script>
 export default {
@@ -11,3 +13,8 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+  .side-container {
+    width: 180px;
+  }
+</style>
