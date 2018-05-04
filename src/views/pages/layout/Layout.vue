@@ -1,6 +1,8 @@
 <template>
   <div class="app-wrapper">
-    <aside class="side-container">111</aside>
+    <aside class="side-container">
+      <side-menu></side-menu>
+    </aside>
     <div class="main-container">
       <header>
         <div class="nav-container"></div>
@@ -12,10 +14,13 @@
   </div>
 </template>
 <script>
+import sideMenu from './side-bar'
 export default {
+  components: {
+    sideMenu
+  },
   data () {
     return {
-
     }
   },
   methods: {
