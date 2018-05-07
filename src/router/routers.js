@@ -6,6 +6,11 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
+      path: '/login',
+      name: 'login',
+      component: () => import(/* webpackChunkName: "login" */ '@/views/pages/login/login')
+    },
+    {
       path: '',
       redirect: '',
       component: () => import(/* webpackChunkName: "home" */ '@/views/pages/layout/Layout'),

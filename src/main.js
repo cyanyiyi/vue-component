@@ -8,6 +8,10 @@ import '@/views/styles/index.scss' // global css
 
 Vue.config.productionTip = false
 
+// router.beforeEach((to, from, next) => {
+
+// })
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
